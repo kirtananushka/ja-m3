@@ -1,0 +1,118 @@
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "James",
+  "surname": "Smith",
+  "birthday": "2000-01-31"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 201, "Response status is not 201: " + response.status);
+    });
+%}
+
+###
+
+POST http://localhost:8080/subscriptions
+Content-Type: application/json
+
+{
+  "userId": 1
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 201, "Response status is not 201: " + response.status);
+    });
+%}
+
+###
+
+PATCH http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "Jack"
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200: " + response.status);
+    });
+%}
+
+###
+
+PATCH http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "birthday": "1977-01-31"
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200: " + response.status);
+    });
+%}
+
+###
+
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Doe",
+  "birthday": "1988-01-31"
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200: " + response.status);
+    });
+%}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Nick",
+  "surname": "Jackson",
+  "birthday": "2001-03-31"
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 201, "Response status is not 201: " + response.status);
+    });
+%}
+
+###
+
+PUT http://localhost:8080/subscriptions/1
+Content-Type: application/json
+
+{
+  "userId": 2
+}
+
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200: " + response.status);
+    });
+%}
+
+###
