@@ -1,5 +1,4 @@
-//module jmp.service.api {
-//    requires jmp.dto;
-//    
-//    exports com.tananushka.javaadvance.jmp.service.api;
-//}
+module com.tananushka.javaadvanced.jmp.service.api {
+    requires com.tananushka.javaadvanced.jmp.dto;
+    exports com.tananushka.javaadvanced.jmp.service.api;
+}

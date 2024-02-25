@@ -1,3 +1,3 @@
-//module jmp.dto {
-//    exports com.tananushka.javaadvance.jmp.dto;
-//}
+module com.tananushka.javaadvanced.jmp.dto {
+    exports com.tananushka.javaadvanced.jmp.dto;
+}

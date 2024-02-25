@@ -1,0 +1,314 @@
+{
+  "info": {
+    "_postman_id": "4b2ba72d-e80e-4d9f-9c1d-02f6f29a84d1",
+    "name": "Java Advance - Module03",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28530340"
+  },
+  "item": [
+    {
+      "name": "Module03",
+      "item": [
+        {
+          "name": "users",
+          "item": [
+            {
+              "name": "/users",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"James\",\r\n  \"surname\": \"Smith\",\r\n  \"birthday\": \"2000-01-31\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users/1",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users/1",
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Jack\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users/1",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Jack\",\r\n  \"surname\": \"Daniel\",\r\n  \"birthday\": \"1990-05-15\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users/1",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "*/*"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/users/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "users",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "subscriptions",
+          "item": [
+            {
+              "name": "/subscriptions",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"userId\": \"1\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/subscriptions",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "subscriptions"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/subscriptions/1",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/subscriptions/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "subscriptions",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/subscriptions",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/subscriptions",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "subscriptions"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/subscriptions/1",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"userId\": \"1\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/subscriptions/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "subscriptions",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/subscriptions/1",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "accept",
+                    "value": "*/*"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}{{API_VERSION}}/subscriptions/1",
+                  "host": [
+                    "{{BASE_URL}}{{API_VERSION}}"
+                  ],
+                  "path": [
+                    "subscriptions",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

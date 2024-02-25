@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.tananushka.javaadvance</groupId>
+        <groupId>com.tananushka.javaadvanced</groupId>
         <artifactId>module03</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.tananushka.javaadvance</groupId>
+            <groupId>com.tananushka.javaadvanced</groupId>
             <artifactId>jmp-dto</artifactId>
             <version>${project.version}</version>
         </dependency>
